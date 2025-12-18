@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de prestadores</title>
+    <link rel="stylesheet" href="estilos/prestador.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de prestadores de Serviços</h1>
+    </header>
+
+    <main>
+    <form class="form-prestador" onsubmit="cadastrarprestador(event)">
+
+        <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+
+        <input type="text" name="servico" id="servico" placeholder="Serviço (Ex: Eletricista ...)" required>
+
+        <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+
+        <input type="tel" name="contato" id="contato" placeholder="whatsapp" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    </main>
+
+    <script src="script/prestador.js"></script>
+</body>
+</html>

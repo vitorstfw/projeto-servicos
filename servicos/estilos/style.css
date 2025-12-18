@@ -1,0 +1,75 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1{
+   margin-bottom: 10px;
+}
+
+header > p{
+    margin-bottom: 10px;
+}
+
+input[type="search"]{
+   width: 302px;
+   height: 40px;
+   padding: 20px;
+
+   background-image: url(../imagens/lupa.png);
+   background-repeat: no-repeat;
+   background-position: right center ;
+    background-size: 25px;
+
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+}
+
+#lista-servicos{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom: 5px;
+}
+
+.card p{
+    font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.card button{
+    padding: 8px;
+    width: 100%;
+    border: none;
+    background: #007BFF;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background: #0056b3;
+}

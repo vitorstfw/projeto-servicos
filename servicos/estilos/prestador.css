@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+header > h1{
+    text-align: center;
+}
+
+.form-prestador{
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.form-prestador input{
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-prestador button{
+    width: 100%;
+    padding: 10px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
