@@ -43,12 +43,19 @@ function criarcard(p) {
     card.classList.add("card");
 
     card.innerHTML = `
+<div class="card-header">
         <h3>${p.nome}</h3>
-        <p><strong>Serviço:</strong> ${p.servico}</p>
+      <span class="tag"> ${p.servico} </span>
+</div>
+
+<div class="card-body">
         <p><strong>Cidade:</strong> ${p.cidade}</p>
         <p><strong>Contato:</strong> ${p.contato}</p>
+</div>
 
-        <button onclick="iniciarpedido (ID_PRESTADOR) ">Contratar Serviço</button>
+<div class="card-footer">
+        <button class="btn-contratar" onclick="iniciarpedido (ID_PRESTADOR) ">Contratar Serviço</button>
+        </div>
         `;
     lista.appendChild(card);
 }
