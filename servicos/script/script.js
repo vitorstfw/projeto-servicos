@@ -54,10 +54,25 @@ function criarcard(p) {
 </div>
 
 <div class="card-footer">
-        <button class="btn-contratar" onclick="iniciarpedido (ID_PRESTADOR) ">Contratar Serviço</button>
+        <button class="btn-contratar" onclick="iniciarpedido(${p.id} )">Contratar Serviço</button>
         </div>
         `;
     lista.appendChild(card);
+}
+
+function iniciarpedido(idprestador){
+    const prestadores = JSON.parse(localStorage.getItem("prestadores")) || [];
+
+    const prestador = prestadores.find(p => p.id === idprestador);
+
+    if (!prestador){
+        alert("prestador não encontrado");
+        return;
+    }
+
+    localStorage.setItem("prestadorselecionado", JSON.stringify(prestador));
+
+    window.location.href = "pedido.html";
 }
 
 
